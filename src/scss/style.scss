@@ -1,0 +1,159 @@
+$font-stack:'Lato', sans-serif;
+$primary-color: #ffffff;
+$footer-background:#e56c69;
+
+body{
+  font-family:$font-stack;
+  color: $primary-color;
+  font-size: 14px;
+}
+
+.welcome{
+  background: url("../img/background.jpg");
+  position: relative;
+  overflow: hidden;
+  .logo{
+    position: absolute;
+    width:73px;
+    height:73px;
+    top:20px;
+    left:20px;
+  }
+  h1{
+    font-size: 52px;
+    font-weight: 300;
+  }
+  p{
+    font-weight: 400;
+  }
+  .welcome-content{
+    padding:150px 0 380px 0;
+  }
+
+  &:before, &:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 100%;
+
+  }
+
+  &:before{
+
+    bottom: -40px;
+    background-color: #fff;
+    height: 70px;
+    transform: rotate(2deg);
+  }
+  &:after{
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 60px;
+    transform: rotate(1deg);
+  }
+}
+
+.navbar {
+  padding-top: 35px;
+  li a{
+    color: $primary-color !important;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .nav-item{
+    margin-right: 50px;
+  }
+
+  .navbar-nav {
+    .nav-item:first-child {
+      a {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .dropdown-menu{
+    background-color: transparent;
+    border:none;
+    .dropdown-item {
+      padding: .25rem 0.5rem;
+      &:hover,&:focus{
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.testimonials{
+  padding:50px 0 180px 0;
+
+  h5{
+    color: #fe992a;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  p{
+    color: #737c85;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .carousel-item{
+    p{
+      color: #fe992a;
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    i.fa { color: #fe992a; }
+    i.fa.fa-quote-right {    margin-left: 40px;}
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    top: auto;
+    bottom: -55px;
+    width: 30px;
+    height: 30px;
+    background-color: #fe992a;
+  }
+
+  .carousel-control-prev {
+    right: 30px;
+    left: auto;
+  }
+
+  .border-testimonial{
+    position: relative;
+  }
+
+  .border-testimonial:before{
+    content: '';
+    border-left: 1px solid #eaeaea;
+    width: 1px;
+    height: 125%;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+  }
+}
+
+.footer{
+  background-color: $footer-background;
+  font-family: Droid Sans;
+  font-size: 12px;
+  font-weight: 400;
+  padding:50px 0 220px 0;
+  a{
+    color:$primary-color;
+  }
+  h6{
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .footer-section { margin-right: 50px; }
+
+  ul{
+    list-style-type: none;
+    padding-left:0;
+  }
+}
