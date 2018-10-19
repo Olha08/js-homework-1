@@ -15,8 +15,6 @@ gulp.task('serve', ['sass'], function() {
 
     gulp.watch("src/scss/*.scss", ['sass']);
 
-    //gulp.watch("src/*.html").on('change', browserSync.reload);
-
 });
 
 gulp.task('sass', function() {
@@ -26,8 +24,6 @@ gulp.task('sass', function() {
         .pipe(sass().on('error', sass.logError))
 
         .pipe(gulp.dest("src/css"));
-
-        //.pipe(browserSync.stream());
 
 });
 
