@@ -30,3 +30,5 @@ gulp.task('sass', function() {
         //.pipe(browserSync.stream());
 
 });
+
+gulp.task('default', ['serve']);
